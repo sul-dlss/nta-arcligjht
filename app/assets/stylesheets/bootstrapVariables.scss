@@ -1,20 +1,3 @@
-// Colors
-$primary: $stanford-cardinal;
-$danger: $stanford-digital-red;
-$info: $stanford-digital-blue;
-$success: $stanford-fog;
-$dark: $stanford-cardinal;
-
-$body-color: $stanford-black;
-
-// Links
-$link-color: $stanford-cardinal;
-$link-decoration: none; // no underline
-$link-hover-decoration: underline;
-
-// Fonts
-$font-family-sans-serif: 'Source Sans Pro', sans-serif;
-
 // Modals
 $modal-backdrop-bg: white;
 $modal-backdrop-opacity: 0.8;
@@ -30,21 +13,11 @@ $border-color: $stanford-black-20;
 // Breadcrumbs
 $breadcrumb-divider: quote("»");
 
-// Navbar
-$navbar-padding-y: 0;
-$navbar-dark-color: white;
-$nav-link-padding-y: 0.3rem;
-
-nav .navbar-nav {
-  --bs-nav-link-font-size: 0.938rem;
-}
-
-// Forms
-$form-text-color: black; // Better contrast for accessability
-
 // Cards
 $card-cap-bg: $cyan-blue-light;
 $card-border-color: $stanford-black-20;
 
 // Off-canvas
-$offcanvas-bg-color: $whisper;
+:root {
+  --bs-offcanvas-bg: var(--stanford-10-black);
+}
