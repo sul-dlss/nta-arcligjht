@@ -1,13 +1,14 @@
 .bi-download {
-  @extend .me-1
+  @extend .me-1;
 }
 
 .collection-sidebar {
-  box-shadow: 1px 0 1px -1px rgba(0,0,0,0.06),
-    2px 0 2px -2px rgba(0,0,0,0.06),
-    4px 0 4px -4px rgba(0,0,0,0.06),
-    8px 0 8px -8px rgba(0,0,0,0.06),
-    16px 0 16px -16px rgba(0,0,0,0.06);
+  box-shadow:
+    1px 0 1px -1px rgba(0, 0, 0, 0.06),
+    2px 0 2px -2px rgba(0, 0, 0, 0.06),
+    4px 0 4px -4px rgba(0, 0, 0, 0.06),
+    8px 0 8px -8px rgba(0, 0, 0, 0.06),
+    16px 0 16px -16px rgba(0, 0, 0, 0.06);
 
   @media (max-width: 991px) {
     border-right: none;
@@ -24,7 +25,7 @@
   }
 
   .al-sidebar-navigation-context .nav-item > a {
-    color: $stanford-black;
+    --bs-nav-link-color: var(--stanford-black);
     padding-bottom: 0.125rem !important;
     padding-top: 0.125rem !important;
   }

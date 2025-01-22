@@ -1,20 +1,14 @@
 // Entry point for your Sass build
-@import 'palette';
-@import 'bootstrapVariables';
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrapOverrides';
-
-$logo-image: url(StanfordLibraries-logo-whitetext.svg);
-$logo-width: 200px;
-$logo-height: 35px;
-
-@import 'blacklight/blacklight';
-@import 'arclight/application';
-@import 'sulFooter';
-@import 'landingPage';
-@import 'home';
-@import 'sidebar';
-@import 'component';
+@import "palette";
+@import "bootstrapVariables";
+@import "bootstrap/scss/bootstrap";
+@import "bootstrapOverrides";
+@import "blacklight/blacklight";
+@import "arclight/application";
+@import "landingPage";
+@import "home";
+@import "sidebar";
+@import "component";
 
 body {
   display: flex;
@@ -42,11 +36,14 @@ main {
   padding-bottom: 1.25rem;
 }
 
-.al-masthead, .navbar-search {
-  background: rgb(213,213,212);
-  background: linear-gradient(145deg,
-    rgba(213,213,212,0.464005585144214) 10%,
-    rgba(244,244,244,1) 95%);
+.al-masthead,
+.navbar-search {
+  background: rgb(213, 213, 212);
+  background: linear-gradient(
+    145deg,
+    rgba(213, 213, 212, 0.464005585144214) 10%,
+    rgba(244, 244, 244, 1) 95%
+  );
 }
 
 .al-masthead + .navbar-search {
@@ -54,18 +51,11 @@ main {
   border-bottom: 1px solid $stanford-black-20;
 }
 
-.al-masthead .navbar-nav .nav-link {
-  color: $link-color;
-  font-size: 1rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
-}
-
 .navbar-search {
   padding-bottom: 1.5rem;
 
   > .container {
-    justify-content: space-around;  // center the search box
+    justify-content: space-around; // center the search box
   }
 
   .search_field {
@@ -92,12 +82,12 @@ main {
       width: auto;
 
       &::after {
-        content: '⸱';
-        padding-left: calc(var(--bs-gutter-x) * .5);
+        content: "⸱";
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
       }
 
       &:last-of-type::after {
-        content: '';
+        content: "";
       }
     }
 
@@ -138,7 +128,7 @@ main {
 }
 
 .facet-values li .selected {
-  color: $stanford-digital-green !important;
+  color: var(--stanford-digital-green) !important;
 }
 
 .grecaptcha-badge {
