@@ -4,7 +4,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'blacklight', '~> 8.2'
-gem "rails", "~> 7.1.1"
+gem "rails", "~> 7.2.2"
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 2.5"
